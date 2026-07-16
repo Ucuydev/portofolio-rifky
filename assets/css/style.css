@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f7f7f2;
+  --text: #171717;
+  --forest: #3f5e44;
+  --olive: #78866b;
+  --earth: #8b7355;
+  --white: #ffffff;
+  --border: #e5e5e0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+}
