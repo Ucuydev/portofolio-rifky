@@ -134,8 +134,8 @@ Animasi:
 # 8. Typography
 
 ## Heading
-- Cormorant Garamond
-- Playfair Display
+- Helvetica
+- Montserrat
 
 ## Body
 - Inter
