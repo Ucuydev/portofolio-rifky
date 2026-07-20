@@ -1,0 +1,125 @@
+/* ============================================
+   DESIGN SYSTEM — CSS Custom Properties
+   Rifky Portfolio | Nature Minimalism Theme
+   ============================================ */
+
+:root {
+  /* ── Color Palette (from PRD) ── */
+  /* Primary */
+  --forest-green: #355E3B;
+  --forest-green-rgb: 53, 94, 59;
+  --earth-brown: #6B4F3A;
+  --earth-brown-rgb: 107, 79, 58;
+
+  /* Neutral */
+  --warm-white: #F7F6F2;
+  --warm-white-rgb: 247, 246, 242;
+  --charcoal: #1E1E1E;
+  --charcoal-rgb: 30, 30, 30;
+  --soft-gray: #D8D6D1;
+  --soft-gray-rgb: 216, 214, 209;
+
+  /* Derived / Functional */
+  --color-bg: var(--warm-white);
+  --color-text: var(--charcoal);
+  --color-text-muted: #6B6B6B;
+  --color-primary: var(--forest-green);
+  --color-accent: var(--earth-brown);
+  --color-border: var(--soft-gray);
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F0EFEB;
+
+  /* ── Typography ── */
+  --font-heading: 'Cormorant Garamond', 'Playfair Display', 'Georgia', serif;
+  --font-body: 'Inter', 'Manrope', 'Poppins', system-ui, sans-serif;
+
+  --fs-xs: 0.75rem;      /* 12px */
+  --fs-sm: 0.875rem;     /* 14px */
+  --fs-base: 1rem;       /* 16px */
+  --fs-md: 1.125rem;     /* 18px */
+  --fs-lg: 1.25rem;      /* 20px */
+  --fs-xl: 1.5rem;       /* 24px */
+  --fs-2xl: 2rem;        /* 32px */
+  --fs-3xl: 2.5rem;      /* 40px */
+  --fs-4xl: 3rem;        /* 48px */
+  --fs-5xl: 3.5rem;      /* 56px */
+  --fs-hero: 4rem;       /* 64px */
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --lh-tight: 1.2;
+  --lh-snug: 1.35;
+  --lh-normal: 1.6;
+  --lh-relaxed: 1.8;
+
+  --ls-tight: -0.02em;
+  --ls-normal: 0;
+  --ls-wide: 0.05em;
+  --ls-wider: 0.1em;
+
+  /* ── Spacing Scale (base 4px) ── */
+  --space-1: 0.25rem;    /* 4px */
+  --space-2: 0.5rem;     /* 8px */
+  --space-3: 0.75rem;    /* 12px */
+  --space-4: 1rem;       /* 16px */
+  --space-5: 1.25rem;    /* 20px */
+  --space-6: 1.5rem;     /* 24px */
+  --space-8: 2rem;       /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-20: 5rem;      /* 80px */
+  --space-24: 6rem;      /* 96px */
+  --space-32: 8rem;      /* 128px */
+
+  /* ── Layout ── */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1200px;
+  --container-max: 1320px;
+
+  /* ── Borders & Radius ── */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+  --border-thin: 1px solid var(--color-border);
+
+  /* ── Shadows (sangat halus sesuai PRD) ── */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.1);
+
+  /* ── Transitions (400–800ms, ease-in-out dari PRD) ── */
+  --transition-fast: 300ms ease-in-out;
+  --transition-base: 400ms ease-in-out;
+  --transition-slow: 600ms ease-in-out;
+  --transition-slower: 800ms ease-in-out;
+
+  /* ── Z-Index Scale ── */
+  --z-behind: -1;
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+
+  /* ── Navbar ── */
+  --navbar-height: 72px;
+  --navbar-blur: 12px;
+}
+
+/* ── Breakpoints (referensi, dipakai di media queries) ──
+   Mobile:  < 768px   (default / mobile-first)
+   Tablet:  >= 768px
+   Desktop: >= 1024px
+   Wide:    >= 1200px
+   ──────────────────────────────────────────── */
