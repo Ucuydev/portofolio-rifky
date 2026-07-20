@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initPortfolioFilter();
   initContactForm();
+  initFeaturedCarousel();
 });
 
 /* ============================================
@@ -55,7 +56,7 @@ function initActiveMenu() {
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
   // Desktop nav links
-  const navLinks = document.querySelectorAll('.navbar__link');
+  const navLinks = document.querySelectorAll('.navbar__link, .navbar__link--home');
   navLinks.forEach(link => {
     const href = link.getAttribute('href');
     if (href === currentPage || (currentPage === '' && href === 'index.html')) {
@@ -289,3 +290,117 @@ function validateField(field) {
 
   return isValid;
 }
+
+/* ============================================
+   7. FEATURED WORK CAROUSEL
+   ============================================ */
+
+function initFeaturedCarousel() {
+  const track = document.getElementById('carousel-track');
+  const slides = document.querySelectorAll('.carousel__slide');
+  const prevBtn = document.getElementById('carousel-prev');
+  const nextBtn = document.getElementById('carousel-next');
+  const categoryLabel = document.getElementById('carousel-category-label');
+
+  if (!track || !slides.length) return;
+
+  let currentIndex = 0;
+  const totalSlides = slides.length;
+
+  function updateCarousel() {
+    // Update active slide
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === currentIndex);
+    });
+
+    // Update category label
+    if (categoryLabel) {
+      const activeSlide = slides[currentIndex];
+      const category = activeSlide.getAttribute('data-category') || '';
+      
+      // Fade out, change text, fade in
+      categoryLabel.style.opacity = '0';
+      categoryLabel.style.transform = 'translateY(-5px)';
+      setTimeout(() => {
+        categoryLabel.textContent = category;
+        categoryLabel.style.opacity = '1';
+        categoryLabel.style.transform = 'translateY(0)';
+      }, 200);
+    }
+
+    // Calculate offset to center the active slide
+    const slideWidth = slides[0].offsetWidth;
+    const gap = 16; // matches --space-4
+    const viewportWidth = track.parentElement.offsetWidth;
+    const offset = (viewportWidth / 2) - (slideWidth / 2) - (currentIndex * (slideWidth + gap));
+    
+    track.style.transform = `translateX(${offset}px)`;
+  }
+
+  function goToSlide(index) {
+    if (index < 0) {
+      currentIndex = totalSlides - 1;
+    } else if (index >= totalSlides) {
+      currentIndex = 0;
+    } else {
+      currentIndex = index;
+    }
+    updateCarousel();
+  }
+
+  // Navigation buttons
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
+  }
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
+  }
+
+  // Click on slide to go to it
+  slides.forEach((slide, i) => {
+    slide.addEventListener('click', () => goToSlide(i));
+  });
+
+  // Touch/swipe support
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  track.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  track.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const diff = touchStartX - touchEndX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        goToSlide(currentIndex + 1);
+      } else {
+        goToSlide(currentIndex - 1);
+      }
+    }
+  }, { passive: true });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    const carousel = document.getElementById('featured-carousel');
+    if (!carousel) return;
+    
+    const rect = carousel.getBoundingClientRect();
+    const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+    
+    if (isVisible) {
+      if (e.key === 'ArrowLeft') goToSlide(currentIndex - 1);
+      if (e.key === 'ArrowRight') goToSlide(currentIndex + 1);
+    }
+  });
+
+  // Handle resize
+  window.addEventListener('resize', () => {
+    updateCarousel();
+  });
+
+  // Initialize
+  updateCarousel();
+}
+

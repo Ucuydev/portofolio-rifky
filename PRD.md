@@ -134,12 +134,9 @@ Animasi:
 # 8. Typography
 
 ## Heading
-- Helvetica
 - Montserrat
 
 ## Body
-- Inter
-- Manrope
 - Poppins
 
 # 9. Website Structure

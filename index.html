@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="[GANTI: Deskripsi singkat tentang Anda dan layanan Anda — maks 160 karakter]">
-    <meta name="keywords" content="portfolio, web developer, UI designer, [GANTI: keyword tambahan]">
+    <meta name="description"
+        content="Rifky Sofian — Creative Developer focused on design, marketing, social media, and web development.">
+    <meta name="keywords"
+        content="portfolio, web developer, UI designer, graphic design, creative developer, Rifky Sofian">
     <meta name="author" content="Rifky Sofian">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Rifky Portfolio — [GANTI: Tagline Singkat]">
-    <meta property="og:description" content="[GANTI: Deskripsi singkat untuk social media sharing]">
+    <meta property="og:title" content="Rifky Portfolio — Creative Developer">
+    <meta property="og:description"
+        content="Creative Developer focused on design, marketing, social media, and web development.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="[GANTI: URL website Anda]">
-    <meta property="og:image" content="[GANTI: URL gambar preview]">
 
-    <title>Rifky Portfolio — [GANTI: Tagline Singkat]</title>
+    <title>Rifky Portfolio — Creative Developer</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml"
@@ -30,18 +31,20 @@
     <!-- ════════════════════════════════════════
        NAVBAR
        ════════════════════════════════════════ -->
-    <nav class="navbar" id="navbar" role="navigation" aria-label="Navigasi utama">
-        <div class="container navbar__inner">
-            <a href="index.html" class="navbar__logo" aria-label="Rifky Portfolio — Beranda">Rifky<span
-                    style="color: var(--color-primary);">.</span></a>
-
+    <nav class="navbar navbar--home" id="navbar" role="navigation" aria-label="Navigasi utama">
+        <div class="container navbar__inner navbar__inner--centered">
             <!-- Desktop Menu -->
-            <ul class="navbar__menu" role="menubar">
-                <li role="none"><a href="index.html" class="navbar__link" role="menuitem">Home</a></li>
-                <li role="none"><a href="about.html" class="navbar__link" role="menuitem">About</a></li>
-                <li role="none"><a href="portfolio.html" class="navbar__link" role="menuitem">Portfolio</a></li>
-                <li role="none"><a href="services.html" class="navbar__link" role="menuitem">Services</a></li>
-                <li role="none"><a href="contact.html" class="navbar__link" role="menuitem">Contact</a></li>
+            <ul class="navbar__menu navbar__menu--home" role="menubar">
+                <li role="none"><a href="index.html" class="navbar__link navbar__link--home" role="menuitem">Home</a>
+                </li>
+                <li role="none"><a href="about.html" class="navbar__link navbar__link--home" role="menuitem">About</a>
+                </li>
+                <li role="none"><a href="portfolio.html" class="navbar__link navbar__link--home"
+                        role="menuitem">Portofolio</a></li>
+                <li role="none"><a href="services.html" class="navbar__link navbar__link--home"
+                        role="menuitem">Services</a></li>
+                <li role="none"><a href="contact.html" class="navbar__link navbar__link--home"
+                        role="menuitem">Contact</a></li>
             </ul>
 
             <!-- Hamburger Button -->
@@ -56,7 +59,7 @@
         <div class="navbar__mobile" id="nav-mobile" role="dialog" aria-label="Menu navigasi mobile">
             <a href="index.html" class="navbar__mobile-link">Home</a>
             <a href="about.html" class="navbar__mobile-link">About</a>
-            <a href="portfolio.html" class="navbar__mobile-link">Portfolio</a>
+            <a href="portfolio.html" class="navbar__mobile-link">Portofolio</a>
             <a href="services.html" class="navbar__mobile-link">Services</a>
             <a href="contact.html" class="navbar__mobile-link">Contact</a>
         </div>
@@ -65,160 +68,172 @@
     <!-- ════════════════════════════════════════
        HERO SECTION
        ════════════════════════════════════════ -->
-    <section class="hero" id="hero">
+    <section class="hero-home" id="hero">
         <div class="container">
-            <div class="hero__content">
-                <span class="hero__label text-reveal">[GANTI: Label — misal "Web Developer & Designer"]</span>
-                <h1 class="hero__title text-reveal">
-                    [GANTI: Headline Utama]<br>
-                    <em>[GANTI: Kata Italic/Aksen]</em>
-                </h1>
-                <p class="hero__description slide-up">
-                    [GANTI: Deskripsi singkat tentang diri Anda — siapa Anda, apa yang Anda lakukan, dan apa yang
-                    membuat Anda unik. 2-3 kalimat.]
-                </p>
-                <div class="hero__actions slide-up">
-                    <a href="portfolio.html" class="btn btn--primary btn--lg">Lihat Portfolio</a>
-                    <a href="contact.html" class="btn btn--outline btn--lg">Hubungi Saya</a>
+            <div class="hero-home__card">
+                <div class="hero-home__content">
+                    <p class="hero-home__greeting">Hi! My name is <strong>Rifky</strong></p>
+                    <h1 class="hero-home__title">Creative Developer.</h1>
+                    <p class="hero-home__description">
+                        Creative Developer focused on design, marketing, social media, and web development. I create
+                        digital experiences that help brands, businesses, and content creators grow, connect with their
+                        audience, and achieve better results.
+                    </p>
+                    <div class="hero-home__actions">
+                        <a href="portfolio.html" class="btn btn--outline-light" id="btn-portfolio-hero">Portofolio
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-home__image-wrapper">
+                    <div class="hero-home__image">
+                        <img src="assets/images/Profile.jpg" alt="Rifky Sofian — Creative Developer" loading="eager">
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Scroll Indicator -->
-        <div class="hero__scroll-indicator" aria-hidden="true">
-            <span>Scroll</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 5v14M5 12l7 7 7-7" />
-            </svg>
         </div>
     </section>
 
     <!-- ════════════════════════════════════════
        FEATURED WORK
        ════════════════════════════════════════ -->
-    <section class="section" id="featured-work">
+    <section class="section featured-work" id="featured-work">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label fade-in">Portfolio</span>
-                <h2 class="section-title text-reveal">Featured Work</h2>
-                <p class="section-subtitle fade-in">[GANTI: Kalimat singkat tentang karya terbaik Anda]</p>
+            <!-- Header Bar -->
+            <div class="featured-work__header">
+                <h2 class="featured-work__title">Featured Work.</h2>
+                <a href="portfolio.html" class="featured-work__see-all" id="btn-see-all-portfolio">
+                    See All Portofolio
+                    <span class="featured-work__see-all-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </span>
+                </a>
             </div>
 
-            <div class="grid grid--3 stagger">
-                <!-- Project 1 -->
-                <article class="project-card slide-up" data-category="web">
-                    <div class="project-card__image">
-                        <div class="img-placeholder" role="img" aria-label="[GANTI: Nama Project 1]">[GANTI: Screenshot
-                            Project 1]</div>
-                        <div class="project-card__overlay">
-                            <h3 class="project-card__overlay-title">[GANTI: Nama Project 1]</h3>
-                            <p class="project-card__overlay-desc">[GANTI: Deskripsi singkat]</p>
-                            <div class="project-card__overlay-links">
-                                <a href="[GANTI: URL Demo]" target="_blank" rel="noopener noreferrer">Demo</a>
-                                <a href="[GANTI: URL GitHub]" target="_blank" rel="noopener noreferrer">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card__body">
-                        <span class="project-card__category">[GANTI: Kategori]</span>
-                        <h3 class="project-card__title">[GANTI: Nama Project 1]</h3>
-                        <p class="project-card__desc">[GANTI: Deskripsi singkat project]</p>
-                    </div>
-                </article>
-
-                <!-- Project 2 -->
-                <article class="project-card slide-up" data-category="ui-ux">
-                    <div class="project-card__image">
-                        <div class="img-placeholder" role="img" aria-label="[GANTI: Nama Project 2]">[GANTI: Screenshot
-                            Project 2]</div>
-                        <div class="project-card__overlay">
-                            <h3 class="project-card__overlay-title">[GANTI: Nama Project 2]</h3>
-                            <p class="project-card__overlay-desc">[GANTI: Deskripsi singkat]</p>
-                            <div class="project-card__overlay-links">
-                                <a href="[GANTI: URL Demo]" target="_blank" rel="noopener noreferrer">Demo</a>
-                                <a href="[GANTI: URL GitHub]" target="_blank" rel="noopener noreferrer">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card__body">
-                        <span class="project-card__category">[GANTI: Kategori]</span>
-                        <h3 class="project-card__title">[GANTI: Nama Project 2]</h3>
-                        <p class="project-card__desc">[GANTI: Deskripsi singkat project]</p>
-                    </div>
-                </article>
-
-                <!-- Project 3 -->
-                <article class="project-card slide-up" data-category="landing-page">
-                    <div class="project-card__image">
-                        <div class="img-placeholder" role="img" aria-label="[GANTI: Nama Project 3]">[GANTI: Screenshot
-                            Project 3]</div>
-                        <div class="project-card__overlay">
-                            <h3 class="project-card__overlay-title">[GANTI: Nama Project 3]</h3>
-                            <p class="project-card__overlay-desc">[GANTI: Deskripsi singkat]</p>
-                            <div class="project-card__overlay-links">
-                                <a href="[GANTI: URL Demo]" target="_blank" rel="noopener noreferrer">Demo</a>
-                                <a href="[GANTI: URL GitHub]" target="_blank" rel="noopener noreferrer">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card__body">
-                        <span class="project-card__category">[GANTI: Kategori]</span>
-                        <h3 class="project-card__title">[GANTI: Nama Project 3]</h3>
-                        <p class="project-card__desc">[GANTI: Deskripsi singkat project]</p>
-                    </div>
-                </article>
+            <!-- Category Label -->
+            <div class="featured-work__category-label">
+                <span class="featured-work__category-text" id="carousel-category-label">Social Media Design</span>
             </div>
 
-            <div style="text-align: center; margin-top: var(--space-10);">
-                <a href="portfolio.html" class="btn btn--outline fade-in">Lihat Semua Project</a>
+            <!-- Carousel -->
+            <div class="carousel" id="featured-carousel">
+                <!-- Decorative Dots Left -->
+                <div class="carousel__dots carousel__dots--left" aria-hidden="true">
+                    <span class="carousel__dot" style="background: var(--soft-gray);"></span>
+                    <span class="carousel__dot" style="background: var(--forest-green);"></span>
+                    <span class="carousel__dot" style="background: var(--charcoal);"></span>
+                </div>
+
+                <!-- Carousel Track -->
+                <div class="carousel__viewport">
+                    <div class="carousel__track" id="carousel-track">
+                        <div class="carousel__slide" data-category="Social Media Design">
+                            <img src="assets/images/Porto Graphic Design.jpg" alt="Social Media Design Portfolio"
+                                loading="lazy">
+                        </div>
+                        <div class="carousel__slide" data-category="UI/UX Design">
+                            <img src="assets/images/Porto UIUX Design.jpg" alt="UI/UX Design Portfolio" loading="lazy">
+                        </div>
+                        <div class="carousel__slide" data-category="Landing Page">
+                            <img src="assets/images/Porto Landing Page.jpg" alt="Landing Page Portfolio" loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <button class="carousel__nav carousel__nav--prev" id="carousel-prev" aria-label="Previous slide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <button class="carousel__nav carousel__nav--next" id="carousel-next" aria-label="Next slide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Decorative Dots Right -->
+                <div class="carousel__dots carousel__dots--right" aria-hidden="true">
+                    <span class="carousel__dot" style="background: var(--charcoal);"></span>
+                    <span class="carousel__dot" style="background: var(--forest-green);"></span>
+                    <span class="carousel__dot" style="background: var(--earth-brown);"></span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ════════════════════════════════════════
-       SERVICES PREVIEW
+       SERVICES PREVIEW — What I Do?
        ════════════════════════════════════════ -->
-    <section class="section section--lg" id="services-preview"
-        style="background-color: var(--color-surface-alt); border-top: var(--border-thin); border-bottom: var(--border-thin);">
+    <section class="section section--lg" id="services-preview">
         <div class="container">
             <div class="section-header">
-                <span class="section-label fade-in">Layanan</span>
-                <h2 class="section-title text-reveal">What I Do</h2>
-                <p class="section-subtitle fade-in">[GANTI: Kalimat singkat tentang layanan yang Anda tawarkan]</p>
+                <h2 class="section-title text-reveal" style="font-size: var(--fs-4xl); color: var(--forest-green);">What
+                    I Do?</h2>
             </div>
 
             <div class="grid grid--4 stagger">
-                <!-- Service 1: Website Development -->
-                <div class="service-card slide-up">
+                <!-- Service 1: Graphic Design -->
+                <div class="service-card service-card--home slide-up">
+                    <h3 class="service-card__title-top">Graphic Design</h3>
                     <div class="service-card__icon">
+                        <!-- Mountain/landscape icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 20L8.5 8 15 20z" />
+                            <path d="M14 20l4-8 4 8" />
+                        </svg>
+                    </div>
+                    <p class="service-card__desc">Create impactful visual designs that strengthen brand identity,
+                        communicate ideas clearly, and leave a lasting impression across digital and print media.</p>
+                </div>
+
+                <!-- Service 2: UI/UX Design -->
+                <div class="service-card service-card--home slide-up">
+                    <h3 class="service-card__title-top">UI/UX Design</h3>
+                    <div class="service-card__icon">
+                        <!-- Star icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
+                    </div>
+                    <p class="service-card__desc">Design intuitive, user-centered interfaces that combine seamless user
+                        experiences with clean, modern visuals to improve engagement and usability.</p>
+                </div>
+
+                <!-- Service 3: Web Development -->
+                <div class="service-card service-card--home slide-up">
+                    <h3 class="service-card__title-top">Web Development</h3>
+                    <div class="service-card__icon">
+                        <!-- Code brackets icon -->
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="16 18 22 12 16 6"></polyline>
                             <polyline points="8 6 2 12 8 18"></polyline>
                         </svg>
                     </div>
-                    <h3 class="service-card__title">Website Development</h3>
-                    <p class="service-card__desc">[GANTI: Deskripsi singkat layanan web development]</p>
+                    <p class="service-card__desc">Build responsive, fast, and scalable websites using modern
+                        technologies, ensuring optimal performance, accessibility, and user experience across all
+                        devices.</p>
                 </div>
 
-                <!-- Service 2: UI Design -->
-                <div class="service-card slide-up">
+                <!-- Service 4: Landing Page -->
+                <div class="service-card service-card--home slide-up">
+                    <h3 class="service-card__title-top">Landing Page</h3>
                     <div class="service-card__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                            <polyline points="21 15 16 10 5 21"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="service-card__title">UI Design</h3>
-                    <p class="service-card__desc">[GANTI: Deskripsi singkat layanan UI design]</p>
-                </div>
-
-                <!-- Service 3: Landing Page -->
-                <div class="service-card slide-up">
-                    <div class="service-card__icon">
+                        <!-- Monitor/desktop icon -->
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
@@ -226,28 +241,19 @@
                             <line x1="12" y1="17" x2="12" y2="21"></line>
                         </svg>
                     </div>
-                    <h3 class="service-card__title">Landing Page</h3>
-                    <p class="service-card__desc">[GANTI: Deskripsi singkat layanan landing page]</p>
-                </div>
-
-                <!-- Service 4: Website Maintenance -->
-                <div class="service-card slide-up">
-                    <div class="service-card__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path
-                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="service-card__title">Website Maintenance</h3>
-                    <p class="service-card__desc">[GANTI: Deskripsi singkat layanan maintenance]</p>
+                    <p class="service-card__desc">Craft high-converting landing pages with compelling visuals, clear
+                        messaging, and strategic call-to-actions designed to maximize leads, sales, and business growth.
+                    </p>
                 </div>
             </div>
 
             <div style="text-align: center; margin-top: var(--space-10);">
-                <a href="services.html" class="btn btn--outline fade-in">Lihat Detail Layanan</a>
+                <a href="services.html" class="btn btn--outline fade-in" id="btn-service-details">Service Details
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
@@ -257,43 +263,32 @@
        ════════════════════════════════════════ -->
     <section class="section cta-section" id="cta">
         <div class="container">
-            <h2 class="cta-section__title text-reveal">[GANTI: Judul CTA — misal "Punya Project di Pikiran?"]</h2>
+            <h2 class="cta-section__title text-reveal">Let's Build Something That Makes an Impact</h2>
             <p class="cta-section__desc fade-in">
-                [GANTI: Kalimat ajakan untuk menghubungi Anda — 1-2 kalimat yang meyakinkan.]
+                Have an idea, a growing business, or a brand ready for the next level? Let's work together to create
+                thoughtful designs and high-performing digital experiences that deliver real results.
             </p>
-            <a href="contact.html" class="btn btn--primary btn--lg slide-up">Mulai Diskusi</a>
+            <a href="https://wa.me/6289525964525" class="btn btn--primary btn--lg slide-up" id="btn-start-project"
+                target="_blank" rel="noopener noreferrer">Start a Project</a>
         </div>
     </section>
 
     <!-- ════════════════════════════════════════
        FOOTER
        ════════════════════════════════════════ -->
-    <footer class="footer" id="footer" role="contentinfo">
+    <footer class="footer footer--home" id="footer" role="contentinfo">
         <div class="container">
             <div class="footer__inner">
                 <!-- Brand -->
                 <div class="footer__brand">
-                    <a href="index.html" class="footer__logo">Rifky<span
+                    <a href="index.html" class="footer__logo">KyDev<span
                             style="color: var(--color-primary);">.</span></a>
-                    <p class="footer__desc">[GANTI: Deskripsi singkat tentang diri Anda atau misi Anda — 1-2 kalimat.]
+                    <p class="footer__desc">Turning ideas into meaningful digital experiences that inspire and perform.
                     </p>
                     <div class="social-links">
-                        <a href="[GANTI: URL GitHub]" class="social-link" aria-label="GitHub" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                        </a>
-                        <a href="[GANTI: URL LinkedIn]" class="social-link" aria-label="LinkedIn" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                            </svg>
-                        </a>
-                        <a href="[GANTI: URL Instagram]" class="social-link" aria-label="Instagram" target="_blank"
-                            rel="noopener noreferrer">
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/rfky.s" class="social-link" aria-label="Instagram"
+                            target="_blank" rel="noopener noreferrer">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -301,12 +296,29 @@
                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                             </svg>
                         </a>
-                        <a href="mailto:[GANTI: email@anda.com]" class="social-link" aria-label="Email">
+                        <!-- GitHub -->
+                        <a href="https://github.com/Ucuydev" class="social-link" aria-label="GitHub" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                        <!-- Phone -->
+                        <a href="tel:089525964525" class="social-link" aria-label="Phone">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
                                 </path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/rifky-sofian-633652274" class="social-link"
+                            aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                             </svg>
                         </a>
                     </div>
@@ -318,7 +330,7 @@
                     <ul class="footer__links">
                         <li><a href="index.html" class="footer__link">Home</a></li>
                         <li><a href="about.html" class="footer__link">About</a></li>
-                        <li><a href="portfolio.html" class="footer__link">Portfolio</a></li>
+                        <li><a href="portfolio.html" class="footer__link">Portofolio</a></li>
                         <li><a href="services.html" class="footer__link">Services</a></li>
                         <li><a href="contact.html" class="footer__link">Contact</a></li>
                     </ul>
@@ -326,10 +338,11 @@
 
                 <!-- Services -->
                 <div>
-                    <h4 class="footer__heading">Layanan</h4>
+                    <h4 class="footer__heading">Services</h4>
                     <ul class="footer__links">
-                        <li><a href="services.html" class="footer__link">Website Development</a></li>
-                        <li><a href="services.html" class="footer__link">UI Design</a></li>
+                        <li><a href="services.html" class="footer__link">Graphic Design</a></li>
+                        <li><a href="services.html" class="footer__link">UI/UX Design</a></li>
+                        <li><a href="services.html" class="footer__link">Web Development</a></li>
                         <li><a href="services.html" class="footer__link">Landing Page</a></li>
                         <li><a href="services.html" class="footer__link">Maintenance</a></li>
                     </ul>
@@ -339,24 +352,6 @@
             <!-- Bottom -->
             <div class="footer__bottom">
                 <p class="footer__copyright">&copy; 2026 Rifky Sofian. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="[GANTI: URL GitHub]" class="social-link" aria-label="GitHub" target="_blank"
-                        rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18"
-                            height="18">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
-                    </a>
-                    <a href="[GANTI: URL LinkedIn]" class="social-link" aria-label="LinkedIn" target="_blank"
-                        rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18"
-                            height="18">
-                            <path
-                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                        </svg>
-                    </a>
-                </div>
             </div>
         </div>
     </footer>
