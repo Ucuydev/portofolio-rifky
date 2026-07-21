@@ -30,8 +30,8 @@
    --color-surface-alt: #F0EFEB;
 
    /* ── Typography ── */
-   --font-heading: 'Helvetica', 'Montserrat', sans-serif;
-   --font-body: 'Inter', 'Manrope', 'Poppins', system-ui, sans-serif;
+   --font-heading: 'Montserrat';
+   --font-body: 'Poppins', 'Inter';
 
    --fs-xs: 0.75rem;
    /* 12px */
